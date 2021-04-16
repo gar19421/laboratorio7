@@ -1,0 +1,507 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\brand\AppData\Local\Temp\s9mo.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 2 2
+$dist/default/production\Lab_Entregas_C.X.production.o
+cinit CODE 0 F F 12 2
+text1 CODE 0 17D 17D 1A 2
+text2 CODE 0 1FC 1FC D 2
+text3 CODE 0 213 213 7 2
+text4 CODE 0 21A 21A 6 2
+text5 CODE 0 197 197 19 2
+text6 CODE 0 220 220 6 2
+text7 CODE 0 21 21 75 2
+text8 CODE 0 FF FF 5B 2
+text9 CODE 0 96 96 69 2
+nvCOMMON COMMON 1 77 77 4 1
+text10 CODE 0 1B0 1B0 19 2
+text11 CODE 0 15A 15A 23 2
+text12 CODE 0 1DC 1DC 12 2
+nvBANK0 BANK0 1 32 32 4 1
+maintext CODE 0 1EE 1EE E 2
+cstackCOMMON COMMON 1 70 70 7 1
+cstackBANK0 BANK0 1 2A 2A 8 1
+inittext CODE 0 1C9 1C9 13 2
+intentry CODE 0 4 4 8 2
+idataBANK0 CODE 0 209 209 A 2
+dataBANK0 BANK0 1 20 20 A 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 36-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 36-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 226-1FFF 2
+ENTRY 3-3 2
+ENTRY 226-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 226-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7B-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 226-1FFF 2
+STRING 3-3 2
+STRING 226-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Lab_Entregas_C.X.production.o
+F cinit CODE >533:C:\Users\brand\AppData\Local\Temp\s9mo.s
+F cinit CODE >536:C:\Users\brand\AppData\Local\Temp\s9mo.s
+F cinit CODE >577:C:\Users\brand\AppData\Local\Temp\s9mo.s
+10 cinit CODE >578:C:\Users\brand\AppData\Local\Temp\s9mo.s
+11 cinit CODE >579:C:\Users\brand\AppData\Local\Temp\s9mo.s
+12 cinit CODE >580:C:\Users\brand\AppData\Local\Temp\s9mo.s
+13 cinit CODE >581:C:\Users\brand\AppData\Local\Temp\s9mo.s
+14 cinit CODE >582:C:\Users\brand\AppData\Local\Temp\s9mo.s
+15 cinit CODE >583:C:\Users\brand\AppData\Local\Temp\s9mo.s
+16 cinit CODE >584:C:\Users\brand\AppData\Local\Temp\s9mo.s
+17 cinit CODE >585:C:\Users\brand\AppData\Local\Temp\s9mo.s
+18 cinit CODE >586:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D cinit CODE >592:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D cinit CODE >594:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1E cinit CODE >595:C:\Users\brand\AppData\Local\Temp\s9mo.s
+4 intentry CODE >135:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1DC text12 CODE >170:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1DC text12 CODE >172:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1E2 text12 CODE >173:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1E6 text12 CODE >175:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1EA text12 CODE >176:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1EC text12 CODE >179:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1ED text12 CODE >182:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+15A text11 CODE >146:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+15A text11 CODE >148:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+15D text11 CODE >149:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+162 text11 CODE >150:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+164 text11 CODE >151:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+165 text11 CODE >152:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+169 text11 CODE >153:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+16F text11 CODE >154:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+171 text11 CODE >155:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+173 text11 CODE >158:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+175 text11 CODE >159:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+176 text11 CODE >160:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+179 text11 CODE >163:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+17B text11 CODE >164:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+17C text11 CODE >167:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1B0 text10 CODE >135:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1B0 text10 CODE >137:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1B4 text10 CODE >138:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1B9 text10 CODE >140:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1BD text10 CODE >141:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1C2 text10 CODE >144:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+96 text9 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+96 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+99 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+9D text9 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+A2 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+A4 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+A8 text9 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+AD text9 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+B1 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+B3 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+B9 text9 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+BB text9 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+BC text9 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+C3 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+C7 text9 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+CB text9 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+D2 text9 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+DC text9 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+E2 text9 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+E3 text9 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+EA text9 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+F0 text9 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+F5 text9 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+FA text9 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+FE text9 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+FF text8 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FF text8 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+102 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+106 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+10B text8 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+10D text8 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+111 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+116 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+11C text8 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+11E text8 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+11F text8 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+126 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+12A text8 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+12E text8 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+138 text8 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+13E text8 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+145 text8 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+14B text8 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+150 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+155 text8 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+159 text8 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+21 text7 CODE >117:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+21 text7 CODE >118:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+27 text7 CODE >120:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+3D text7 CODE >121:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+53 text7 CODE >122:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+69 text7 CODE >123:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+7F text7 CODE >125:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+87 text7 CODE >126:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+8E text7 CODE >127:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+95 text7 CODE >128:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+220 text6 CODE >223:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+220 text6 CODE >225:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+221 text6 CODE >227:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+222 text6 CODE >228:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+223 text6 CODE >230:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+224 text6 CODE >231:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+225 text6 CODE >234:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+197 text5 CODE >196:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+197 text5 CODE >198:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+19A text5 CODE >199:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+19B text5 CODE >201:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+19F text5 CODE >203:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1A0 text5 CODE >204:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1A1 text5 CODE >205:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1A3 text5 CODE >206:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1A4 text5 CODE >209:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1A5 text5 CODE >210:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1A7 text5 CODE >212:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1AA text5 CODE >213:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1AC text5 CODE >214:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1AD text5 CODE >215:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1AE text5 CODE >216:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1AF text5 CODE >221:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+21A text4 CODE >237:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+21A text4 CODE >239:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+21E text4 CODE >241:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+21F text4 CODE >244:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+213 text3 CODE >186:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+213 text3 CODE >188:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+216 text3 CODE >189:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+217 text3 CODE >190:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+218 text3 CODE >191:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+219 text3 CODE >194:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1FC text2 CODE >246:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1FC text2 CODE >248:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1FF text2 CODE >249:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+200 text2 CODE >250:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+201 text2 CODE >251:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+202 text2 CODE >252:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+203 text2 CODE >254:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+207 text2 CODE >255:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+208 text2 CODE >258:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+17D text1 CODE >104:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+17D text1 CODE >106:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+182 text1 CODE >107:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+187 text1 CODE >108:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+18C text1 CODE >109:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+191 text1 CODE >110:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+196 text1 CODE >113:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1EE maintext CODE >93:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1EE maintext CODE >95:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1F3 maintext CODE >98:C:\Users\brand\MPLABXProjects\Lab_Entregas_C.X\lab07_main.c
+1C9 inittext CODE >551:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1C9 inittext CODE >552:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1CA inittext CODE >553:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1CB inittext CODE >554:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1CC inittext CODE >555:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1CD inittext CODE >562:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1CD inittext CODE >563:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D2 inittext CODE >564:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D3 inittext CODE >565:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D4 inittext CODE >566:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D5 inittext CODE >567:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D6 inittext CODE >568:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D7 inittext CODE >569:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D8 inittext CODE >570:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1D9 inittext CODE >571:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1DA inittext CODE >572:C:\Users\brand\AppData\Local\Temp\s9mo.s
+1DB inittext CODE >573:C:\Users\brand\AppData\Local\Temp\s9mo.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+___awdiv@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 226 0 ABS 0 - -
+__Hspace_1 7B 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+_IOCB 96 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_WPUB 95 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\brand\AppData\Local\Temp\s9mo.o
+_main 3DC 0 CODE 0 maintext dist/default/production\Lab_Entregas_C.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+start 18 0 CODE 0 init C:\Users\brand\AppData\Local\Temp\s9mo.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__LnvCOMMON 0 0 ABS 0 nvCOMMON -
+intlevel0 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\s9mo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\s9mo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\s9mo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\s9mo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\s9mo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\s9mo.o
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_decenas 77 0 COMMON 1 nvCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_config_io 360 0 CODE 0 text5 dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_config_int_enable 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_config_io 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+___awdiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+_unidades 78 0 COMMON 1 nvCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_config_iocb 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_config_io 32E 0 CODE 0 text5 dist/default/production\Lab_Entregas_C.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___awdiv@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__end_of___awdiv 1FE 0 CODE 0 text9 dist/default/production\Lab_Entregas_C.X.production.o
+__end_of___awmod 2B4 0 CODE 0 text8 dist/default/production\Lab_Entregas_C.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\brand\AppData\Local\Temp\s9mo.o
+___stacklo 0 0 ABS 0 - C:\Users\brand\AppData\Local\Temp\s9mo.o
+__size_of_setup 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__HnvCOMMON 0 0 ABS 0 nvCOMMON -
+_unidades_display 34 0 BANK0 1 nvBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+_var_temp 7A 0 COMMON 1 nvCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\Lab_Entregas_C.X.production.o
+_decenas_display 33 0 BANK0 1 nvBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+_config_timer0 3F8 0 CODE 0 text2 dist/default/production\Lab_Entregas_C.X.production.o
+__pcstackBANK0 2A 0 BANK0 1 cstackBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_TMR0_interrupt 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_IOCB_interrupt 3B8 0 CODE 0 text12 dist/default/production\Lab_Entregas_C.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\brand\AppData\Local\Temp\s9mo.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 42 0 CODE 0 cinit -
+__end_of_config_int_enable 44C 0 CODE 0 text6 dist/default/production\Lab_Entregas_C.X.production.o
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_PORTBbits 6 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_PORTEbits 9 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 32 0 BANK0 1 nvBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 226 0 ABS 0 - -
+__S1 7B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 360 0 CODE 0 text10 dist/default/production\Lab_Entregas_C.X.production.o
+__pnvCOMMON 77 0 COMMON 1 nvCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_IOCB_interrupt 3DC 0 CODE 0 text12 dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_isr 392 0 CODE 0 text10 dist/default/production\Lab_Entregas_C.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__size_of_config_timer0 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+_config_reloj 426 0 CODE 0 text3 dist/default/production\Lab_Entregas_C.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\brand\AppData\Local\Temp\s9mo.o
+_config_iocb 434 0 CODE 0 text4 dist/default/production\Lab_Entregas_C.X.production.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+_config_int_enable 440 0 CODE 0 text6 dist/default/production\Lab_Entregas_C.X.production.o
+___awmod@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext10 360 0 CODE 0 text10 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext11 2B4 0 CODE 0 text11 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext12 3B8 0 CODE 0 text12 dist/default/production\Lab_Entregas_C.X.production.o
+___awdiv 12C 0 CODE 0 text9 dist/default/production\Lab_Entregas_C.X.production.o
+___awmod 1FE 0 CODE 0 text8 dist/default/production\Lab_Entregas_C.X.production.o
+__pmaintext 3DC 0 CODE 0 maintext dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_config_timer0 412 0 CODE 0 text2 dist/default/production\Lab_Entregas_C.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+__size_of_config_reloj 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 392 0 CODE 0 inittext dist/default/production\Lab_Entregas_C.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__end_of_config_reloj 434 0 CODE 0 text3 dist/default/production\Lab_Entregas_C.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 3A 0 CODE 0 cinit dist/default/production\Lab_Entregas_C.X.production.o
+_centenas_display 32 0 BANK0 1 nvBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 2D 0 BANK0 1 cstackBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+?___awdiv 73 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+?___awmod 73 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+___awmod@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__ptext1 2FA 0 CODE 0 text1 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext2 3F8 0 CODE 0 text2 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext3 426 0 CODE 0 text3 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext4 434 0 CODE 0 text4 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext5 32E 0 CODE 0 text5 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext6 440 0 CODE 0 text6 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext7 42 0 CODE 0 text7 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext8 1FE 0 CODE 0 text8 dist/default/production\Lab_Entregas_C.X.production.o
+__ptext9 12C 0 CODE 0 text9 dist/default/production\Lab_Entregas_C.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_TMR0_interrupt 2B4 0 CODE 0 text11 dist/default/production\Lab_Entregas_C.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_contador 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__end_of__initialization 3A 0 CODE 0 cinit dist/default/production\Lab_Entregas_C.X.production.o
+___awmod@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 412 0 CODE 0 idataBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+_decenas_temp 79 0 COMMON 1 nvCOMMON dist/default/production\Lab_Entregas_C.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+init_ram0 39A 0 CODE 0 inittext dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_main 3F8 0 CODE 0 maintext dist/default/production\Lab_Entregas_C.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_setup 32E 0 CODE 0 text1 dist/default/production\Lab_Entregas_C.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Lab_Entregas_C.X.production.o
+_setup 2FA 0 CODE 0 text1 dist/default/production\Lab_Entregas_C.X.production.o
+_tabla 20 0 BANK0 1 dataBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_TMR0_interrupt 2FA 0 CODE 0 text11 dist/default/production\Lab_Entregas_C.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+_centenas 35 0 BANK0 1 nvBANK0 dist/default/production\Lab_Entregas_C.X.production.o
+_contador 42 0 CODE 0 text7 dist/default/production\Lab_Entregas_C.X.production.o
+__size_of_IOCB_interrupt 0 0 ABS 0 - dist/default/production\Lab_Entregas_C.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_config_iocb 440 0 CODE 0 text4 dist/default/production\Lab_Entregas_C.X.production.o
+__end_of_contador 12C 0 CODE 0 text7 dist/default/production\Lab_Entregas_C.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 B 1
+intentry 0 4 8 222 2
+reset_vec 0 0 0 3 2
+dataBANK0 1 20 20 16 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
